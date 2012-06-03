@@ -1,0 +1,293 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name='description'  content='{MetaDescription}'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href="http://labs.lovellfelix.com/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="http://labs.lovellfelix.com/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="http://labs.lovellfelix.com/assets/css/docs.css" rel="stylesheet">
+<link href="http://labs.lovellfelix.com/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <title>blog · {Title}</title>
+    <link rel='alternate' type='application/rss+xml' href='{RSS}'>
+    <style type="text/css" media="screen">
+    body {
+      padding-top: 50px;
+      min-height: 100%;
+    }
+    
+    .post {
+        width: 710px;
+        box-shadow: 0 0 6px #ccc;
+        border-radius:0.25em;
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+        margin: 0.5em auto 45px;
+        border:1px solid #AAA;
+        background: white;
+        position: relative;
+    }
+    
+    .post-inner {
+        margin: 0 5px;
+        padding: 40px 50px 30px;
+    }
+    
+    .post-inner h1 a {
+        color: #313131;
+        font-weight: bold;
+    }
+    
+    .post-inner p {
+        margin-bottom: 15px;
+    }
+    
+    .post-meta {
+        color: #AAA;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #EBEBEB;
+    }
+    
+    .post-avatar {
+        position: absolute;
+        left: -35px;
+        top:  50px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        border-style: 1px solid #ccc;
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
+    }
+    
+     .post-body img {
+         border: 5px solid white;
+         margin: 0 auto 30px;
+         display: block;
+         -webkit-border-radius: 2px;
+         -moz-border-radius: 2px;
+         -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
+         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
+     }
+     
+     .post-body img.right {
+         float: right;
+         margin: 10px -120px 30px 40px;
+     }
+     
+     .footer {
+         margin-top: 45px;
+         padding: 35px 0 36px;
+         border-top: 1px solid #E5E5E5;
+     }
+     
+     #disqus_thread {
+        width: 670px;
+        margin: auto;
+    }
+
+  </style>
+  </head>
+  <body>
+
+    <!-- Topbar
+    ================================================== -->
+    <div id="header" class="navbar navbar-fixed-top" data-scrollspy="scrollspy" >
+      <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+           <li><a href="/">blog · {Title}</a></li>
+              {block:PreviousPage}
+                  <li><a href="{PreviousPage}">Previous Page</a></li>
+              {/block:PreviousPage}
+              {block:NextPage}
+                  <li><a href="{NextPage}">Next Page</a></li>
+              {/block:NextPage}
+              {block:PreviousPost}
+                  <li><a href="{PreviousPost}">Previous Post</a></li>
+              {/block:PreviousPost}
+              {block:NextPost}
+                  <li><a href="{NextPost}">Next Post</a></li>
+              {/block:NextPost}
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container">
+    <div class="inner">
+    			<div class="page-header jumbotron masthead">
+					<h1>Blog</h1><small>
+						<blockquote>
+							My views on social media and new technologies, and ocassional tutorials.
+					</small> </blockquote>
+				</div></div>
+    
+    {block:Posts}        
+        <div class="post row">
+            
+          <div class="post-inner">
+            {block:Text}
+                {block:Title}                                                       
+                  <h1><a href='{Permalink}'>{Title}</a></h1>
+                  <div class="post-meta">
+                  
+                   <img class="post-avatar" src="{PortraitURL-64}" width="64" height="64">
+                  
+                    {Name} &mdash; {Month} {DayOfMonth}, {Year}</p>
+                  </div>
+                </header>
+                {/block:Title}
+                <div class="post-body">
+                {Body}
+                </div>
+            {/block:Text}    
+            
+            {block:Photo}
+                {LinkOpenTag}<img src='{PhotoURL-500}' alt='{PhotoAlt}'/>{LinkCloseTag}
+                {block:Caption}
+                    <p>{Caption}</p>
+                {/block:Caption}
+            {/block:Photo}
+            {block:Photoset}
+                {Photoset-500}
+                {block:Caption}
+                    <p>{Caption}</p>
+                {/block:Caption}
+            {/block:Photoset}
+            {block:Quote}
+                <p class='quote'>"{Quote}"</p>
+                {block:Source}
+                    <p>{Source}</p>
+                {/block:Source}
+            {/block:Quote}
+            {block:Link}
+                <a href='{URL}' class='link' {Target}>{Name}</a>
+                {block:Description}
+                    <p>{Description}</p>
+                {/block:Description}
+            {/block:Link}
+            {block:Chat}
+                {block:Title}
+                    <h3>{Title}</h3>
+                {/block:Title}
+                <table cellpadding='0' cellspacing='0' width='100%' border='0' class='chat'>
+                    {block:Lines}
+                        <tr class='{Alt}'>
+                            {block:Label}
+                                <td class='label'>{Label}</td>
+                            {/block:Label}
+                            <td>{Line}</td>
+                        </tr>
+                    {/block:Lines}
+                </table>
+            {/block:Chat}
+            {block:Audio}
+                <div class='audio'>
+                    <div class='audioLeft'>
+                        {AudioPlayerWhite}
+                    </div>
+                    <div class='audioRight'>
+                        {FormattedPlayCount} Plays
+                    </div>
+                    <br class='clear' />
+                </div>
+                {block:Caption}
+                    <p>{Caption}</p>
+                {/block:Caption}
+            {/block:Audio}
+            {block:Video}
+                {Video-500}
+                {block:Caption}
+                    <p>{Caption}</p>
+                {/block:Caption}
+            {/block:Video}
+            
+            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
+            </div>
+        </div>
+
+    <script type="text/javascript">
+     var disqus_url = "{Permalink}";
+     var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /**
+        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+        */
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = 'http://SHORTNAME.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=SHORTNAME">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    {/block:Permalink}<script type="text/javascript">
+    var disqus_shortname = 'SHORTNAME';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'http://SHORTNAME.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
+    {/block:Posts}
+
+  <!-- Footer -->
+  <div class="footer">
+    {block:PreviousPage}
+        <a href="{PreviousPage}">&#171; Previous</a>
+    {/block:PreviousPage}
+
+    {block:NextPage}
+        <a href="{NextPage}">Next &#187;</a>
+    {/block:NextPage}
+
+    <footer class="footer">
+    <p class="pull-right">
+	</p>
+	<p>
+		&copy; <a href="http://lovellfelix.com" target="_bank">Lovell Felix</a>
+        <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/jquery.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/google-code-prettify/prettify.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-transition.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-alert.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-modal.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-dropdown.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-scrollspy.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-tab.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-tooltip.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-popover.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-button.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-collapse.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-carousel.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/bootstrap-typeahead.js"></script>
+<script src="http://labs.lovellfelix.com/assets/js/application.js"></script>
+</footer>
+    
+        
+  </div>
+  <!-- /Footer -->
+  
+  </div>
+  <!-- /container -->
+
+  </body>
+</html>
