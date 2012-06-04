@@ -8,6 +8,8 @@
 
 [My tumblr blog](http://blog.lovellfelix.com/)
 
+[Layout on github pages](http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/)
+
 ##Customizing bootstrap theme
 
--Customization file can be found [here](http://twitter.github.com/bootstrap/download.html) on Twitter bootstrap website.
+- Customization file can be found [here](http://twitter.github.com/bootstrap/download.html) on Twitter bootstrap website.
