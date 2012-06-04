@@ -1,5 +1,13 @@
 ## Twitter bootstrap theme for tumblr
 
-- Change the CSS reference link to your custom bootstrap CSS and add features as needed.
+- Modified CSS file in asset foler or replace with your custom bootstrap CSS and add features as needed.
 
 - The java scripts loaded in the footer isn't necessary for basic html layout and features. 
+
+##Demo 
+
+[My tumblr blog](http://blog.lovellfelix.com/)
+
+##Customizing bootstrap theme
+
+-Customization file can be found [here](http://twitter.github.com/bootstrap/download.html) on Twitter bootstrap website.
