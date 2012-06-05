@@ -12,16 +12,16 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href="http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/assets/css/bootstrap.css" rel="stylesheet">
         <link href="http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/assets/css/tumblr.css" rel="stylesheet">
+    	<link href="http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/assets/css/tumblr.css" rel="stylesheet">
 <link href="http://lovellfelix.github.com/tumblr-twitter-bootstrap-theme/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-    <title>blog � {Title}</title>
+    <title>blog · {Title}</title>
     <link rel='alternate' type='application/rss+xml' href='{RSS}'>
     <style type="text/css" media="screen">
-    
+    <meta name="description" content="{MetaDescription}" />
 
   </style>
   </head>
@@ -33,20 +33,7 @@
       <div class="navbar-inner">
         <div class="container">
           <ul class="nav">
-           <li><a href="/">blog � {Title}</a></li>
-              {block:PreviousPage}
-                  <li><a href="{PreviousPage}">Previous Page</a></li>
-              {/block:PreviousPage}
-              {block:NextPage}
-                  <li><a href="{NextPage}">Next Page</a></li>
-              {/block:NextPage}
-              {block:PreviousPost}
-                  <li><a href="{PreviousPost}">Previous Post</a></li>
-              {/block:PreviousPost}
-              {block:NextPost}
-                  <li><a href="{NextPost}">Next Post</a></li>
-              {/block:NextPost}
-                  
+           <li><a href="/">blog · {Title}</a></li>                              
           </ul>
         </div>
       </div>
@@ -65,6 +52,7 @@
 					<div class="span3 columns">
 
 						<ul class="nav nav-list">
+							<br />
 							<li>
 								<a href="/"> <i class="icon-home"></i> Home </a>
 							</li>
@@ -79,16 +67,20 @@
 							</li>
 							<li class="divider"></li>
 							<li>
-								<a href="#"> <i class="icon-question-sign"></i> Help </a>
+								<a href="http://blog.lovellfelix.com/ask"> <i class="icon-question-sign"></i> Help </a>
 							</li>
 
 						</ul>
 
 						<br />
-						<br />
-					
-
-					
+					    <section class="span2">
+						<blockquote>
+						
+						<p>"The beautiful thing about learning is no one can take it away from you"</p>
+						
+						<small>B. B. King</small>
+						</blockquote> 
+					</section>
 
 				</div>
     
@@ -172,6 +164,7 @@
                 {/block:Caption}
             {/block:Video}
             
+            
             <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
             </div>
         </div>
@@ -190,8 +183,8 @@
        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=SHORTNAME">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=SHORTNAME"> </a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">  <span class="logo-disqus"> </span></a>
     {/block:Permalink}<script type="text/javascript">
     var disqus_shortname = 'SHORTNAME';
     (function () {
@@ -204,20 +197,21 @@
     {/block:Posts}
 
   <!-- Footer -->
-  <div class="footer">
+  <hr class="soften">
+  <center>
     {block:PreviousPage}
         <a href="{PreviousPage}">&#171; Previous</a>
     {/block:PreviousPage}
 
     {block:NextPage}
         <a href="{NextPage}">Next &#187;</a>
-    {/block:NextPage}
+    {/block:NextPage}</center>
 
-    <footer class="footer">
+    <div class="footer">
     <p class="pull-right">
 	</p>
 	<p>
-		&copy; <a href="http://lovellfelix.com" target="_bank">Lovell Felix</a>
+		&copy; {CopyrightYears} <a href="http://lovellfelix.com" target="_bank">Lovell Felix</a>
         <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -240,8 +234,7 @@
 </footer>
     
         
-  </div>
-  <!-- /Footer -->
+  
   
   </div>
   <!-- /container -->
