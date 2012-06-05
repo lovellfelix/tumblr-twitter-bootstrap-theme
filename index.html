@@ -52,6 +52,7 @@
 					<div class="span3 columns">
 
 						<ul class="nav nav-list">
+							<br />
 							<li>
 								<a href="/"> <i class="icon-home"></i> Home </a>
 							</li>
@@ -71,7 +72,6 @@
 
 						</ul>
 
-						<br />
 						<br />
 					    <section class="span2">
 						<blockquote>
@@ -183,8 +183,8 @@
        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=SHORTNAME">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=SHORTNAME"> </a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">  <span class="logo-disqus"> </span></a>
     {/block:Permalink}<script type="text/javascript">
     var disqus_shortname = 'SHORTNAME';
     (function () {
@@ -197,20 +197,21 @@
     {/block:Posts}
 
   <!-- Footer -->
-  <div class="footer">
+  <hr class="soften">
+  <center>
     {block:PreviousPage}
         <a href="{PreviousPage}">&#171; Previous</a>
     {/block:PreviousPage}
 
     {block:NextPage}
         <a href="{NextPage}">Next &#187;</a>
-    {/block:NextPage}
+    {/block:NextPage}</center>
 
-    <footer class="footer">
+    <div class="footer">
     <p class="pull-right">
 	</p>
 	<p>
-		&copy; <a href="http://lovellfelix.com" target="_bank">Lovell Felix</a>
+		&copy; {CopyrightYears} <a href="http://lovellfelix.com" target="_bank">Lovell Felix</a>
         <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -233,8 +234,7 @@
 </footer>
     
         
-  </div>
-  <!-- /Footer -->
+  
   
   </div>
   <!-- /container -->
