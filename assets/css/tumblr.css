@@ -60,7 +60,7 @@
          -webkit-border-radius: 2px;
          -moz-border-radius: 2px;
          -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
-         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.51);
+         /*-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.51);*/
      }
      
      .post-body img.right {
