@@ -1,0 +1,76 @@
+// button-groups.less
+// -----------------------------------------------------
+
+.g-button-group {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.g-button + .g-button,
+.g-button + .g-button-group,
+.g-button-group + .g-button,
+.g-button-group + .g-button-group {
+    margin-left: 15px;
+}
+
+.g-button-group .g-button {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    .border-radius(0);
+}
+
+
+// Set corners individual because sometimes a single button can be in a 
+// .btn-group and we need :first-child and :last-child to both match
+.g-button-group .g-button:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 2px;
+         -moz-border-radius-topleft: 2px;
+             border-top-left-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+      -moz-border-radius-bottomleft: 2px;
+          border-bottom-left-radius: 2px;
+}
+.g-button-group .g-button:last-child,
+.g-button-group .dropdown-toggle {
+     -webkit-border-top-right-radius: 2px;
+         -moz-border-radius-topright: 2px;
+             border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+      -moz-border-radius-bottomright: 2px;
+          border-bottom-right-radius: 2px;
+}
+
+/* -------------------------------------------------------- BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.g-button-container .g-button,
+.g-button-container .g-button-group {
+    vertical-align: top;
+}
+
+
+
+.g-button-group.open {
+  // IE7's z-index only goes to the nearest positioned ancestor, which would
+  // make the menu appear below buttons that appeared later on the page
+  *z-index: 1000;
+
+  // Reposition menu on open
+  .dropdown-menu {
+    display: block;
+    margin-top: 1px;
+  }
+
+  .dropdown-toggle {
+    background-image: none;
+    .box-shadow(inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05));
+  }
+}
