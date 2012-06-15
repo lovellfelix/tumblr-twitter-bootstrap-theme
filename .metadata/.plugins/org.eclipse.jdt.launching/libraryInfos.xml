@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Users\Lovell\AppData\Local\Titanium Studio\jre" version="1.6.0_24">
+<bootpath>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\resources.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\rt.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\jsse.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\jce.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\charsets.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\Lovell\AppData\Local\Titanium Studio" version="1.6.0_24">
+<bootpath>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\resources.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\rt.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\jsse.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\jce.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\charsets.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\Lovell\AppData\Local\Titanium Studio\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -63,7 +63,7 @@
     			<div class="page-header jumbotron masthead">
 					<h1>Blog</h1><small>
 						<blockquote>
-							MY VIEWS ON SOCIAL MEDIA, NEW TECHNOLOGY, STARTUPS, AND OCASSIONAL TUTORIALS.
+							SOCIAL MEDIA, NEW TECHNOLOGY, STARTUPS, AND OCASSIONAL TUTORIALS.
 					</small> </blockquote>
 				</div>
 				
@@ -123,9 +123,18 @@
             {/block:Text}    
             
             {block:Photo}
+			{block:Title}  
+			<h1><a href='{Permalink}'>{Caption}</a></h1>
+				<div class="post-meta">
+				<img class="post-avatar" src="{PortraitURL-64}" width="64" height="64">
+				{Name} &mdash; {Month} {DayOfMonth}, {Year}</p>
+				 </div>
+                </header>
+				{/block:Title}
+				
                 {LinkOpenTag}<img src='{PhotoURL-500}' alt='{PhotoAlt}'/>{LinkCloseTag}
                 {block:Caption}
-                    <p>{Caption}</p>
+                    
                 {/block:Caption}
             {/block:Photo}
             {block:Photoset}
