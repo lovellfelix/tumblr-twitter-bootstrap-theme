@@ -17,6 +17,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -27,10 +28,21 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11915" selectionOffset="0" selectionTopPixel="2624"/>
+</editor>
+<editor id="com.aptana.editor.html" name="test.html" partName="test.html" title="test.html" tooltip="/Users/lovellfelix/Dropbox/labs/test.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="28825" selectionTopPixel="2460"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -66,7 +78,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.appcelerator.titanium.ui.browser.dashboard" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.html" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Studio (extended)"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -151,7 +163,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@9da0a7" ratio="0.7490494" ratioLeft="591" ratioRight="198" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.aptana.terminal.views.terminal" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal" label="Terminal"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -185,6 +197,10 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@152c11d"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -193,8 +209,16 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@9da0a7"/>
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="test.html" tooltip="/Users/lovellfelix/Dropbox/labs/test.html">
+<persistable uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html">
+<persistable uri="file:/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html"/>
+</file>
+</mruList>
 </workbench>

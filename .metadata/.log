@@ -482,3 +482,13 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/lovellfelix
 
 !ENTRY org.eclipse.core.net 1 0 2012-07-12 18:54:18.350
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-13 02:52:17.332 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_33
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/lovellfelix/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme -keyring /Users/lovellfelix/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-13 02:52:26.796
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
