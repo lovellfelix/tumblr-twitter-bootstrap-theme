@@ -37,11 +37,15 @@
 </editorArea>
 <editor id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11915" selectionOffset="0" selectionTopPixel="2624"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7502" selectionTopPixel="2625"/>
 </editor>
-<editor id="com.aptana.editor.html" name="test.html" partName="test.html" title="test.html" tooltip="/Users/lovellfelix/Dropbox/labs/test.html" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.aptana.editor.html" name="test.html" partName="test.html" title="test.html" tooltip="/Users/lovellfelix/Dropbox/labs/test.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="28825" selectionTopPixel="2460"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2943" selectionTopPixel="1138"/>
+</editor>
+<editor id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/lovellfelix/Dropbox/labs/nginx-centos-install-bash-script/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/lovellfelix/Dropbox/labs/nginx-centos-install-bash-script/index.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1654" selectionTopPixel="371"/>
 </editor>
 </editors>
 <views>
@@ -191,16 +195,37 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/lovellfelix/Dropbox/labs/tumblr-twitter-bootstrap-theme/index.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/lovellfelix/Dropbox/labs/nginx-centos-install-bash-script/index.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
+</editors>
+<item historyLabel="index.html" index="0">
+<position info="not_deleted" x="7502" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="test.html" index="2">
+<position info="not_deleted" x="2943" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="1221" y="0"/>
+</item>
+<item historyLabel="index.html" index="1">
+<position info="not_deleted" x="1957" y="0"/>
+</item>
+<item active="true" historyLabel="test.html" index="3">
+<position info="not_deleted" x="2943" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@152c11d"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -209,11 +234,13 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@9da0a7"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/lovellfelix/Dropbox/labs/nginx-centos-install-bash-script/index.html">
+<persistable uri="file:/Users/lovellfelix/Dropbox/labs/nginx-centos-install-bash-script/index.html"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="test.html" tooltip="/Users/lovellfelix/Dropbox/labs/test.html">
 <persistable uri="file:/Users/lovellfelix/Dropbox/labs/test.html"/>
 </file>
