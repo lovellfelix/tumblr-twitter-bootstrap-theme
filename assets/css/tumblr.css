@@ -6,7 +6,7 @@
 */
 
 
-/* Tumblr CSS addon*/
+/* Tumblr CSS addon */
     
     .post {
         width: 700px;
@@ -78,7 +78,28 @@
         width: 670px;
         margin: auto;
     }
-	
+    
+/* Social Share
+-------------------------------------------------- */	
+
+	.shared_bar {
+	background-color: #EEE;
+	color: #666;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	list-style: none outside none;
+	line-height: 1.6em;
+	height: 35px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #CBCBCB;
+	}
+
+
 
 /* Body and structure
 -------------------------------------------------- */
