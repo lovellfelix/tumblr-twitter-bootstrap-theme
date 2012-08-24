@@ -1,8 +1,7 @@
 /* Add additional stylesheets below
 -------------------------------------------------- */
 /*
-  Bootstrap's documentation styles
-  Special styles for presenting Bootstrap's documentation and examples
+ *
 */
 
 
@@ -99,7 +98,80 @@
 	border: 1px solid #CBCBCB;
 	}
 
+    
+/* Social Links
+-------------------------------------------------- */	
+.networks .service {
+	width: 25px;
+}
 
+.networks .icon {
+	background-image: url(assets/img/social-networks-1.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 25px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 25px;
+
+	-khtml-border-radius: 12.5px;
+	-moz-border-radius: 12.5px;
+    -webkit-border-radius: 12.5px;
+    border-radius: 12.5px;
+}
+
+.networks .exfm .icon {
+	background-position: -225px 0;
+}
+
+.networks .facebook .icon {
+	background-position: -25px 0;
+}
+
+.networks .flickr .icon {
+	background-position: -50px 0;
+}
+
+.networks .foursquare .icon {
+	background-position: -275px 0;
+}
+
+.networks .googleplus .icon {
+	background-position: -300px 0;
+}
+
+.networks .lastfm .icon {
+	background-position: -175px 0;
+}
+
+.networks .linkedin .icon {
+	background-position: -75px 0;
+}
+
+.networks .pinterest .icon {
+	background-position: -200px 0;
+}
+
+.networks .rdio .icon {
+	background-position: -150px 0;
+}
+
+.networks .soundcloud .icon {
+	background-position: -250px 0;
+}
+
+.networks .spotify .icon {
+	background-position: -325px 0;
+}
+
+.networks .vimeo .icon {
+	background-position: -100px 0;
+}
+
+.networks .youtube .icon {
+	background-position: -125px 0;
+}
 
 /* Body and structure
 -------------------------------------------------- */
